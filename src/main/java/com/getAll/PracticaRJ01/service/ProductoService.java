@@ -14,9 +14,9 @@ import lombok.RequiredArgsConstructor;
 public class ProductoService {
 	
 	private final ProductoRepository productoRepository;
-	
+			
 	public List<Producto> getAll() {
 		return productoRepository.findAllByOrderByIdProductoDesc();
 	}
-
+	
 }
